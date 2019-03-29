@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/install
+
+Name: map_server
+Description: Description of map_server
+Version: 1.14.4
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/install/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/install/lib -lmap_server_image_loader
+Requires: roscpp nav_msgs tf2

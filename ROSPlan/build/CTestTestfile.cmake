@@ -1,0 +1,38 @@
+# CMake generated Testfile for 
+# Source directory: /home/ys/MOMDP_DESPOT/ROSPlan/src
+# Build directory: /home/ys/MOMDP_DESPOT/ROSPlan/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs(gtest)
+subdirs(navigation/navigation)
+subdirs(rosplan/rosplan)
+subdirs(rosplan/rosplan_demos)
+subdirs(rosplan/rosplan_rqt)
+subdirs(navigation/map_server)
+subdirs(rosplan/rosplan_dispatch_msgs)
+subdirs(rosplan/rosplan_knowledge_msgs)
+subdirs(rosplan/rosplan_dependencies)
+subdirs(rosplan_momdp)
+subdirs(actionlib_tutorials)
+subdirs(rosplan/rosplan_planning_system)
+subdirs(rosplan/rosplan_interface_movebase)
+subdirs(navigation/amcl)
+subdirs(occupancy_grid_utils)
+subdirs(navigation/robot_pose_ekf)
+subdirs(rosplan/rosplan_interface_mapping)
+subdirs(rosplan/rosplan_interface_turtlebot2)
+subdirs(rosplan/rosplan_knowledge_base)
+subdirs(navigation/fake_localization)
+subdirs(navigation/voxel_grid)
+subdirs(navigation/costmap_2d)
+subdirs(navigation/nav_core)
+subdirs(navigation/base_local_planner)
+subdirs(navigation/carrot_planner)
+subdirs(navigation/clear_costmap_recovery)
+subdirs(navigation/dwa_local_planner)
+subdirs(navigation/move_slow_and_clear)
+subdirs(navigation/navfn)
+subdirs(navigation/global_planner)
+subdirs(navigation/rotate_recovery)
+subdirs(navigation/move_base)

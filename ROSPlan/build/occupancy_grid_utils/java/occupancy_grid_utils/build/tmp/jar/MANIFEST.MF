@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Export-Package: occupancy_grid_utils;version="0.0.10";uses:="geometry_
+ msgs,nav_msgs,org.ros.internal.message,sensor_msgs,std_msgs"
+Bundle-SymbolicName: org.ros.rosjava_messages.occupancy_grid_utils
+Bundle-Version: 0.0.10
+Bundle-Name: occupancy_grid_utils
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1553850260000
+Import-Package: geometry_msgs;version="[1.12,2)",nav_msgs;version="[1.
+ 12,2)",org.ros.internal.message,sensor_msgs;version="[1.12,2)",std_ms
+ gs;version="[0.5,1)"
+Created-By: 1.8.0_191 (Oracle Corporation)
+Tool: Bnd-2.1.0.20130426-122213
+

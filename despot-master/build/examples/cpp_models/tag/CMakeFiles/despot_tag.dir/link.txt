@@ -1,0 +1,1 @@
+/usr/bin/c++    -msse2 -mfpmath=sse -O3 -DNDEBUG   CMakeFiles/despot_tag.dir/src/base/base_tag.cpp.o CMakeFiles/despot_tag.dir/src/tag/tag.cpp.o CMakeFiles/despot_tag.dir/src/tag/main.cpp.o  -o despot_tag -rdynamic ../../../libdespot.so -Wl,-rpath,/home/ys/despot-master/build: 

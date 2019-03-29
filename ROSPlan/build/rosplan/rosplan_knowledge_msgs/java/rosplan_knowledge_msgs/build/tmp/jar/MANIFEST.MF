@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Export-Package: rosplan_knowledge_msgs;version="0.0.0";uses:="diagnost
+ ic_msgs,geometry_msgs,org.jboss.netty.buffer,org.ros.internal.message
+ ,org.ros.message"
+Bundle-SymbolicName: org.ros.rosjava_messages.rosplan_knowledge_msgs
+Bundle-Version: 0.0.0
+Bundle-Name: rosplan_knowledge_msgs
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1553850227000
+Import-Package: diagnostic_msgs;version="[1.12,2)",geometry_msgs;versi
+ on="[1.12,2)",org.jboss.netty.buffer;version="[3.5,4)",org.ros.intern
+ al.message,org.ros.message
+Created-By: 1.8.0_191 (Oracle Corporation)
+Tool: Bnd-2.1.0.20130426-122213
+

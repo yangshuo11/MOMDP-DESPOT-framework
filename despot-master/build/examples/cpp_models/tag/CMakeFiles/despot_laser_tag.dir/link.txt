@@ -1,0 +1,1 @@
+/usr/bin/c++    -msse2 -mfpmath=sse -O3 -DNDEBUG   CMakeFiles/despot_laser_tag.dir/src/base/base_tag.cpp.o CMakeFiles/despot_laser_tag.dir/src/laser_tag/laser_tag.cpp.o CMakeFiles/despot_laser_tag.dir/src/laser_tag/main.cpp.o  -o despot_laser_tag -rdynamic ../../../libdespot.so -Wl,-rpath,/home/ys/despot-master/build: 

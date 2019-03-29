@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/devel
+
+Name: rosplan_dependencies
+Description: Description of rosplan_dependencies
+Version: 0.1.0
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/VAL/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/rddl_parser -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ippc_server/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/src
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/devel/lib -lval_kcl -lrddl_parser -lippc_server -lppddl_parser
+Requires: roscpp rosplan_knowledge_msgs

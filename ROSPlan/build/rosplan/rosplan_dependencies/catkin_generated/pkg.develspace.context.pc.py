@@ -1,0 +1,8 @@
+# generated from catkin/cmake/template/pkg.context.pc.in
+CATKIN_PACKAGE_PREFIX = ""
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/ys/MOMDP_DESPOT/ROSPlan/devel/include;/opt/ros/kinetic/include;/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/VAL/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/rddl_parser;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ippc_server/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/src".split(';') if "/home/ys/MOMDP_DESPOT/ROSPlan/devel/include;/opt/ros/kinetic/include;/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/VAL/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/rddl_parser;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ippc_server/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/include;/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/src" != "" else []
+PROJECT_CATKIN_DEPENDS = "roscpp;rosplan_knowledge_msgs".replace(';', ' ')
+PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lval_kcl;-lrddl_parser;-lippc_server;-lppddl_parser".split(';') if "-lval_kcl;-lrddl_parser;-lippc_server;-lppddl_parser" != "" else []
+PROJECT_NAME = "rosplan_dependencies"
+PROJECT_SPACE_DIR = "/home/ys/MOMDP_DESPOT/ROSPlan/devel"
+PROJECT_VERSION = "0.1.0"

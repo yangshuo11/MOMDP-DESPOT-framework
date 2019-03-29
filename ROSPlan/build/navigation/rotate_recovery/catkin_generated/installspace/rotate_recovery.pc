@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/install
+
+Name: rotate_recovery
+Description: Description of rotate_recovery
+Version: 1.14.4
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/install/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/install/lib -lrotate_recovery
+Requires: roscpp pluginlib

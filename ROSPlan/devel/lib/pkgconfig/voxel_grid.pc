@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/devel
+
+Name: voxel_grid
+Description: Description of voxel_grid
+Version: 1.14.4
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/src/navigation/voxel_grid/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/devel/lib -lvoxel_grid
+Requires: roscpp

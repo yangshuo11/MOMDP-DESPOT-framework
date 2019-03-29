@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/devel
+
+Name: rosplan_knowledge_msgs
+Description: Description of rosplan_knowledge_msgs
+Version: 0.0.0
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/devel/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/devel/lib 
+Requires: message_generation message_runtime diagnostic_msgs geometry_msgs roscpp rospy std_msgs genmsg

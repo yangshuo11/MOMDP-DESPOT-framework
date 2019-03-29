@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+   <pomdpx version="1.0" id="rockSample"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="pomdpx.xsd">
+         <Description>
+          abs: wp1
+          real: wp1 wp10 wp11
+          flag: true false
+         </Description>
+         <Discount>0.95</Discount>
+         <Variable>
+              <StateVar vnamePrev="abs_pos_0" vnameCurr="abs_pos_1"
+                fullyObs="true">
+                  <ValueEnum>wp1</ValueEnum>
+              </StateVar>
+              <StateVar vnamePrev="flag_0" vnameCurr="flag_1" fullyObs="true">
+                  <ValueEnum>true false</ValueEnum>
+              </StateVar>
+              <StateVar vnamePrev="real_pos_0" vnameCurr="real_pos_1" fullyObs="false">
+                  <ValueEnum>wp1 wp10 wp11</ValueEnum>
+              </StateVar>
+
+              <ObsVar vname="obs_sensor">
+                  <ValueEnum>owp1 owp10 owp11</ValueEnum>
+              </ObsVar>
+
+              <ActionVar vname="action_robot">
+                  <ValueEnum>turnAngle0 turnAngle1 move</ValueEnum>
+              </ActionVar>
+              <RewardVar vname="reward_robot" />
+         </Variable>
+
+         <InitialStateBelief>
+         <CondProb>
+                  <Var>abs_pos_0</Var>
+                  <Parent>null</Parent>
+                  <Parameter type="TBL">
+                        <Entry>
+                            <Instance> - </Instance>
+                            <ProbTable>1.0</ProbTable>
+                        </Entry>
+              </Parameter>
+         </CondProb>
+
+         <CondProb>
+              <Var>flag_0</Var>
+              <Parent>null</Parent>
+              <Parameter type="TBL">
+                  <Entry>
+                      <Instance>-</Instance>
+                      <ProbTable>0 1.0</ProbTable>
+                  </Entry>
+              </Parameter>
+         </CondProb>
+
+         <CondProb>
+              <Var>real_pos_0</Var>
+              <Parent>null</Parent>
+              <Parameter type="TBL">
+                  <Entry>
+                      <Instance>-</Instance>
+                      <ProbTable>0.8 0.1 0.1</ProbTable>
+                  </Entry>
+              </Parameter>
+         </CondProb>
+      </InitialStateBelief>
+
+      <StateTransitionFunction>
+          <CondProb>
+              <Var>abs_pos_1</Var>
+              <Parent>action_robot abs_pos_0</Parent>
+              <Parameter type="TBL">
+                  <Entry>
+                      <Instance>* wp1 wp1</Instance>
+                      <ProbTable>1.0</ProbTable>
+                  </Entry>
+           </Parameter>
+       </CondProb>
+
+       <CondProb>
+            <Var>flag_1</Var>
+            <Parent>action_robot flag_1</Parent>
+            <Parameter type="TBL">
+                  <Entry>
+                      <Instance>turnAngle0 * true</Instance>
+                      <ProbTable>1.0</ProbTable>
+                  </Entry>
+                  <Entry>
+                      <Instance>turnAngle1 * true</Instance>
+                      <ProbTable>1.0</ProbTable>
+                  </Entry>
+
+                  <Entry>
+                      <Instance>move true true</Instance>
+                      <ProbTable>1.0</ProbTable>
+                  </Entry>
+
+                  <Entry>
+                      <Instance>move false false</Instance>
+                      <ProbTable>1.0</ProbTable>
+                  </Entry>
+            </Parameter>
+       </CondProb>
+
+
+       <CondProb>
+           <Var>real_pos_1</Var>
+           <Parent>action_robot abs_pos_0 flag_0 real_pos_0</Parent>
+           <Parameter>
+               <Entry>
+                   <Instance>turnAngle0 * * wp1 wp1 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 * * wp10 wp10 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 * * wp11 wp11 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 * * wp1 wp1 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 * * wp10 wp10 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 * * wp11 wp11 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move * * * wp1 </Instance>
+                   <ProbTable>1.0</ProbTable>
+               </Entry>
+           </Parameter>
+       </CondProb>
+
+
+
+   </StateTransitionFunction>
+   <ObsFunction>
+       <CondProb>
+           <Var>obs_sensor</Var>
+           <Parent>action_robot abs_pos_1 flag_1 real_pos_1</Parent>
+           <Parameter type="TBL">
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp1 owp1 </Instance>
+                   <ProbTable>0.8</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp1 owp10 </Instance>
+                   <ProbTable>0.1</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp1 owp11 </Instance>
+                   <ProbTable>0.1</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp10 owp1 </Instance>
+                   <ProbTable>0.1</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp10 owp10 </Instance>
+                   <ProbTable>0.8</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp10 owp11 </Instance>
+                   <ProbTable>0.1</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp11 owp1 </Instance>
+                   <ProbTable>0.1</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp11 owp10 </Instance>
+                   <ProbTable>0.1</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle0 wp1 * wp11 owp11 </Instance>
+                   <ProbTable>0.8</ProbTable>
+               </Entry>
+
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp1 owp1 </Instance>
+                   <ProbTable>0.9</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp1 owp10 </Instance>
+                   <ProbTable>0.05</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp1 owp11 </Instance>
+                   <ProbTable>0.05</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp10 owp1 </Instance>
+                   <ProbTable>0.05</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp10 owp10 </Instance>
+                   <ProbTable>0.9</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp10 owp11 </Instance>
+                   <ProbTable>0.05</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp11 owp1 </Instance>
+                   <ProbTable>0.05</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp11 owp10 </Instance>
+                   <ProbTable>0.05</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>turnAngle1 wp1 * wp11 owp11 </Instance>
+                   <ProbTable>0.9</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp1 owp1</Instance>
+                   <ProbTable>0.4</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp1 owp10</Instance>
+                   <ProbTable>0.3</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp1 owp11</Instance>
+                   <ProbTable>0.3</ProbTable>
+               </Entry>
+
+               <Entry>
+                   <Instance>move wp1 * wp10 owp1</Instance>
+                   <ProbTable>0.3</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp10 owp10</Instance>
+                   <ProbTable>0.4</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp10 owp11</Instance>
+                   <ProbTable>0.3</ProbTable>
+               </Entry>
+
+               <Entry>
+                   <Instance>move wp1 * wp11 owp1</Instance>
+                   <ProbTable>0.3</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp11 owp10</Instance>
+                   <ProbTable>0.3</ProbTable>
+               </Entry>
+               <Entry>
+                   <Instance>move wp1 * wp11 owp11</Instance>
+                   <ProbTable>0.4</ProbTable>
+               </Entry>
+
+
+            </Parameter>
+        </CondProb>
+    </ObsFunction>
+    <RewardFunction>
+        <Func>
+            <Var>reward_robot</Var>
+            <Parent>action_robot abs_pos_0 flag_0 real_pos_0</Parent>
+            <Parameter type="TBL">
+                <Entry>
+                     <Instance>turnAngle1 wp1 false wp10</Instance>
+                     <ValueTable>10</ValueTable>
+                </Entry>
+                <Entry>
+                     <Instance>turnAngle1 wp1 false wp11</Instance>
+                     <ValueTable>10</ValueTable>
+                </Entry>
+                <Entry>
+                     <Instance>move wp1 true wp10</Instance>
+                     <ValueTable>10</ValueTable>
+                </Entry>
+                <Entry>
+                     <Instance>move wp1 true wp11</Instance>
+                     <ValueTable>10</ValueTable>
+                </Entry>
+
+            </Parameter>
+        </Func>
+    </RewardFunction>
+ </pomdpx>

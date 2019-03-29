@@ -1,0 +1,1 @@
+/usr/bin/c++    -msse2 -mfpmath=sse -O3 -DNDEBUG   CMakeFiles/despot_adventurer.dir/src/adventurer.cpp.o CMakeFiles/despot_adventurer.dir/src/main.cpp.o  -o despot_adventurer -rdynamic ../../../libdespot.so -Wl,-rpath,/home/ys/despot-master/build: 

@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/install
+
+Name: rosplan_planning_system
+Description: Description of rosplan_planning_system
+Version: 0.0.0
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/install/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/VAL/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/rddl_parser -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ippc_server/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/include -I/home/ys/MOMDP_DESPOT/ROSPlan/src/rosplan/rosplan_dependencies/ppddl_parser/src -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/install/lib -lrosplan_action_interface
+Requires: roscpp rospy actionlib std_msgs std_srvs diagnostic_msgs rosplan_dispatch_msgs rosplan_knowledge_msgs

@@ -1,0 +1,3 @@
+rosrun rosplan_momdp PDDLMOMDPnode --policy-file=/home/ys/ROSPlan/src/rosplan_momdp/src/out.policy /home/ys/ROSPlan/src/rosplan_momdp/examples/POMDPX/Tiger.pomdpx
+
+rosrun rosplan_momdp rosplan_momdp -m /home/ys/ROSPlan/src/rosplan_momdp/examples/POMDPX/ActionMonitorNew.pomdpx --runs 2

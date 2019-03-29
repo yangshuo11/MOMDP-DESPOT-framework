@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/install
+
+Name: rosplan_momdp
+Description: Description of rosplan_momdp
+Version: 0.0.0
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/install/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/install/lib 
+Requires: roscpp rospy std_msgs std_srvs message_runtime

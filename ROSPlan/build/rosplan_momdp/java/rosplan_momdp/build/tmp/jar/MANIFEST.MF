@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Export-Package: rosplan_momdp;version="0.0.0";uses:="org.ros.internal.
+ message"
+Bundle-SymbolicName: org.ros.rosjava_messages.rosplan_momdp
+Bundle-Version: 0.0.0
+Bundle-Name: rosplan_momdp
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1553850229000
+Import-Package: org.ros.internal.message
+Created-By: 1.8.0_191 (Oracle Corporation)
+Tool: Bnd-2.1.0.20130426-122213
+

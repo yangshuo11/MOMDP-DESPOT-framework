@@ -1,0 +1,8 @@
+prefix=/home/ys/MOMDP_DESPOT/ROSPlan/install
+
+Name: dwa_local_planner
+Description: Description of dwa_local_planner
+Version: 1.14.4
+Cflags: -I/home/ys/MOMDP_DESPOT/ROSPlan/install/include
+Libs: -L/home/ys/MOMDP_DESPOT/ROSPlan/install/lib -ldwa_local_planner
+Requires: dynamic_reconfigure nav_msgs pluginlib roscpp
