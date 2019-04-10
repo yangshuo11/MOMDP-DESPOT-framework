@@ -19,11 +19,29 @@ This framework integrates the ROSPlan symbolic task planning framework with the 
 ## Requirements
 Tested Operating Systems:
 
-| Ubuntu 16.04| OS X (10.13.6) | 
+| Ubuntu 16.04 |ROS Kinetic | OS X (10.13.6) | 
 
 Tested Compilers: gcc | g++ 4.2.1 or above
 
 Tested Hardware: Intel Core i7 CPU, 8.0 GB RAM
+
+Get the prerequisites:
+
+(for Kinetic)
+```sh
+sudo apt-get install flex ros-kinetic-move-base-msgs ros-kinetic-mongodb-store ros-kinetic-tf2-bullet freeglut3-dev python-catkin-tools
+```
+(for Indigo)
+```sh
+sudo apt-get install flex ros-indigo-mongodb-store ros-indigo-tf2-bullet freeglut3-dev python-catkin-tools
+```
+
+## Download
+
+Clone the repository from Github (**Recommended**):
+```bash
+$ git clone https://github.com/AdaCompNUS/despot.git
+```
 
 
 
