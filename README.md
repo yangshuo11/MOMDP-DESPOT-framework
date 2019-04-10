@@ -19,9 +19,9 @@ This framework integrates the ROSPlan symbolic task planning framework with the 
 ## Requirements
 Tested Operating Systems:
 
-<!--| Linux 14.04| OS X (10.1)  | Windows  |
+| Linux 14.04| OS X (10.1)  | Windows  |
 |:------------- |:-------------:|: -----:|
-|[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)| [![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges) | Not Supported |-->
+|[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)| [![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges) | Not Supported |
 
 | Linux       | OS X
 | :-------------: |:-------------:|
