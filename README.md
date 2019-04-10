@@ -1,6 +1,15 @@
 # MOMDP-DESPOT-framework
 A integrated framework for robotic task planning and execution monitoring
 
+This framework integrates the ROSPlan symbolic task planning framework with the DESPOT POMDP solver, as well as develops a standarized ROS-interfaced middleware for realistic robotic plan execution.
+
+
+
+
+
+
+
+
 ROSPlan Framework
 =================
 [![Build Status](https://travis-ci.com/KCL-Planning/ROSPlan.svg?branch=master)](https://travis-ci.com/KCL-Planning/ROSPlan)
