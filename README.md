@@ -19,17 +19,11 @@ This framework integrates the ROSPlan symbolic task planning framework with the 
 ## Requirements
 Tested Operating Systems:
 
-| Linux 14.04| OS X (10.1)  | Windows  |
-|:------------- |:-------------:|: -----:|
-|[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)| [![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)
-
-| Linux       | OS X
-| :-------------: |:-------------:|
-|[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)      | [![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges) 
+| Ubuntu 16.04| OS X (10.13.6) | 
 
 Tested Compilers: gcc | g++ 4.2.1 or above
 
-Tested Hardware: Intel Core i7 CPU, 2.0 GB RAM
+Tested Hardware: Intel Core i7 CPU, 8.0 GB RAM
 
 
 
