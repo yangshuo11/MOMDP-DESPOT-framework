@@ -9,12 +9,6 @@ This framework integrates the ROSPlan symbolic task planning framework with the 
 * [Download](#download)
 * [Installation](#installation)
 * [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [Package Contents](#package-contents)
-* [CMakeLists](#cmakelists)
-* [Acknowledgements](#acknowledgements)
-* [Bugs and Suggestions](#bugs-and-suggestions)
-* [Release Notes](#release-notes)
 
 ## Requirements
 Tested Operating Systems:
