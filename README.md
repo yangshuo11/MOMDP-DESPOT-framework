@@ -3,7 +3,33 @@ A integrated framework for robotic task planning and execution monitoring
 
 This framework integrates the ROSPlan symbolic task planning framework with the DESPOT POMDP solver, as well as develops a standarized ROS-interfaced middleware for realistic robotic plan execution.
 
+## Table of Contents
 
+* [Requirements](#requirements)
+* [Download](#download)
+* [Installation](#installation)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [Package Contents](#package-contents)
+* [CMakeLists](#cmakelists)
+* [Acknowledgements](#acknowledgements)
+* [Bugs and Suggestions](#bugs-and-suggestions)
+* [Release Notes](#release-notes)
+
+## Requirements
+Tested Operating Systems:
+
+<!--| Linux 14.04| OS X (10.1)  | Windows  |
+|:------------- |:-------------:|: -----:|
+|[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)| [![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges) | Not Supported |-->
+
+| Linux       | OS X
+| :-------------: |:-------------:|
+|[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges)      | [![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/boennemann/badges) 
+
+Tested Compilers: gcc | g++ 4.2.1 or above
+
+Tested Hardware: Intel Core i7 CPU, 2.0 GB RAM
 
 
 
